@@ -598,8 +598,8 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   # Display Support
   #
   Silicon/Rockchip/Drivers/Vop2Dxe/Vop2Dxe.inf
-  # Silicon/Rockchip/Library/DisplayLib/AnalogixDpLib.inf
-  Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
+  Silicon/Rockchip/Library/DisplayLib/AnalogixDpLib.inf
+  # Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
   Silicon/Rockchip/Library/DisplayLib/DwDpLib.inf
   Silicon/Rockchip/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
 

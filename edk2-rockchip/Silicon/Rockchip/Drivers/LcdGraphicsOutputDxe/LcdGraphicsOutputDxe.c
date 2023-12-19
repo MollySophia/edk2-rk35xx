@@ -84,6 +84,18 @@ STATIC DISPLAY_MODE mDisplayModes[] = {
     0,
     1
   },
+  {
+    // eDP : 2880 x 1800 60hz
+    2,
+    148500000,
+    {2880, 32, 200, 48},
+    {1800, 5, 37, 3},
+    0,
+    0,
+    0,
+    0,
+    1
+  }
 };
 
 STATIC CONST UINT32 mMaxMode = ARRAY_SIZE (mDisplayModes);

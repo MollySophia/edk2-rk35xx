@@ -106,8 +106,8 @@
   # Display Support
   #
   INF Silicon/Rockchip/Drivers/Vop2Dxe/Vop2Dxe.inf
-  # INF Silicon/Rockchip/Library/DisplayLib/AnalogixDpLib.inf
-  INF Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
+  INF Silicon/Rockchip/Library/DisplayLib/AnalogixDpLib.inf
+  # INF Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
   INF Silicon/Rockchip/Library/DisplayLib/DwDpLib.inf
   INF Silicon/Rockchip/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
 
