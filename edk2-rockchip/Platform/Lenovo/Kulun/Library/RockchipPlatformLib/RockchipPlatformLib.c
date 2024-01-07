@@ -398,5 +398,6 @@ PlatformEarlyInit (
   RkPwmSetConfig(&pwm_data);
   RkPwmEnable(&pwm_data);
 
+  GpioPinSetDirection(1, GPIO_PIN_PB2, GPIO_PIN_INPUT);
   GpioPinSetPull(1, GPIO_PIN_PB2, GPIO_PIN_PULL_UP);
 }
