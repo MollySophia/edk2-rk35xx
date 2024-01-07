@@ -201,34 +201,20 @@ I2cIomux (
 {
   switch (id) {
   case 0:
-    /* io mux M2 */
-    PMU2_IOC->GPIO0D_IOMUX_SEL_L = (0x0F00UL << 16) | 0x0300;
-    PMU2_IOC->GPIO0D_IOMUX_SEL_L = (0x00F0UL << 16) | 0x0030;
     break;
   case 1:
-    /* io mux */
-    //BUS_IOC->GPIO0B_IOMUX_SEL_H = (0x0FF0UL << 16) | 0x0990;
-    //PMU2_IOC->GPIO0B_IOMUX_SEL_H = (0x0FF0UL << 16) | 0x0880;
     break;
   case 2:
-    /* io mux */
-    BUS_IOC->GPIO0B_IOMUX_SEL_H = (0xF000UL << 16) | 0x9000;
-    BUS_IOC->GPIO0C_IOMUX_SEL_L = (0x000FUL << 16) | 0x0009;
-    PMU2_IOC->GPIO0B_IOMUX_SEL_H = (0xF000UL << 16) | 0x8000;
-    PMU2_IOC->GPIO0C_IOMUX_SEL_L = (0x000FUL << 16) | 0x0008;
     break;
   case 3:
     break;
   case 4:
+    GpioPinSetFunction(1, GPIO_PIN_PA3, 9); //i2c4_scl_m3
+    GpioPinSetFunction(1, GPIO_PIN_PA2, 9); //i2c4_sda_m3
     break;
   case 5:
     break;
   case 6:
-    /* io mux M0 */
-    BUS_IOC->GPIO0C_IOMUX_SEL_H = (0xF000UL << 16) | 0x9000;
-    BUS_IOC->GPIO0D_IOMUX_SEL_L = (0x000FUL << 16) | 0x0009;
-    PMU2_IOC->GPIO0C_IOMUX_SEL_H = (0xF000UL << 16) | 0x8000;
-    PMU2_IOC->GPIO0D_IOMUX_SEL_L = (0x000FUL << 16) | 0x0008;
     break;
   default:
     break;
