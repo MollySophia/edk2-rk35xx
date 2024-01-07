@@ -10,4 +10,4 @@
   INF RuleOverride = ACPITABLE $(PLATFORM_DIRECTORY)/AcpiTables/AcpiTables.inf
 
   # Splash screen logo
-  # INF $(VENDOR_DIRECTORY)/Drivers/LogoDxe/LogoDxe.inf
+  INF MdeModulePkg/Logo/LogoDxe.inf

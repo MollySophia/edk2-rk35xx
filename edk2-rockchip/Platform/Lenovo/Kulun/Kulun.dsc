@@ -103,4 +103,4 @@
   $(PLATFORM_DIRECTORY)/AcpiTables/AcpiTables.inf
 
   # Splash screen logo
-  # $(VENDOR_DIRECTORY)/Drivers/LogoDxe/LogoDxe.inf
+  MdeModulePkg/Logo/LogoDxe.inf
