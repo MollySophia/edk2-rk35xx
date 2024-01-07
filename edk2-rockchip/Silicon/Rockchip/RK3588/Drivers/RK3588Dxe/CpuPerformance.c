@@ -286,7 +286,8 @@ SetCpuVoltage (
   if (ClockId == SCMI_CLK_CPUL) {
     SetCPULittleVoltage (Microvolts);
   } else {
-    SetRk860xRegulatorByTag (ClockId, Microvolts);
+    // SetRk860xRegulatorByTag (ClockId, Microvolts);
+    SetCPUBigVoltage (Microvolts);
   }
 }
 

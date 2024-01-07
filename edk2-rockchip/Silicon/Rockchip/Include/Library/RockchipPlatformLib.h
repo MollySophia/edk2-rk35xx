@@ -74,6 +74,12 @@ SetCPULittleVoltage (
 
 VOID
 EFIAPI
+SetCPUBigVoltage (
+  IN UINT32 Microvolts
+  );
+
+VOID
+EFIAPI
 NorFspiIomux (
   VOID
   );

@@ -61,8 +61,6 @@ static struct regulator_init_data rk806_init_data[] = {
   RK8XX_VOLTAGE_INIT(SLAVER_PLDO4, 3300000),
   RK8XX_VOLTAGE_INIT(SLAVER_PLDO5, 2800000),
   RK8XX_VOLTAGE_INIT(SLAVER_PLDO6, 1800000),
-
-  /* No dual PMICs on this platform */
 };
 
 VOID
@@ -129,6 +127,23 @@ SetCPULittleVoltage (
 
   RK806RegulatorInit(Rk806CpuLittleSupply);
 }
+
+VOID
+EFIAPI
+SetCPUBigVoltage (
+  IN UINT32 Microvolts
+  )
+{
+  struct regulator_init_data Rk806CpuBig01Supply =
+        RK8XX_VOLTAGE_INIT(SLAVER_BUCK2, Microvolts);
+
+  struct regulator_init_data Rk809CpuBig23Supply = 
+        RK8XX_VOLTAGE_INIT(SLAVER_BUCK1, Microvolts);
+
+  RK806RegulatorInit(Rk806CpuBig01Supply);
+  RK806RegulatorInit(Rk809CpuBig23Supply);
+}
+
 
 VOID
 EFIAPI
